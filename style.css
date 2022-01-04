@@ -6,17 +6,18 @@
     --accent1: #1C1625;
     --accent2: #1b1327;
     --linkUnvisited: #F3D87B;
-    --linkVisited: purple;
+    --linkVisited: #b34eb3;
 }
 
 body{
     background: var(--mainColor);
-    font-family: "Courier New";
-    color: var(--textBody)
+    font-family: "Audiowide", sans-serif;
+    font-variant: small-caps;
+    color: var(--textBody);
 }
 
 #name{
-    font-size: 50px;
+    font-size: 40pt;
     font-weight: bold;
     color: var(--textTitle);
     text-align: center;
@@ -25,12 +26,12 @@ body{
 }
 
 .list{
-    font-size: 20px;
+    font-size: 14pt;
     word-wrap: normal;
 }
 
 .col1, .col2{
-    width:50%;
+    width: 50%;
 }
 
 .col1{
@@ -42,12 +43,29 @@ body{
 }
 
 #infoTable{
-    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98%;
 }
 
-h3{
+th{
     text-align: center;
-    color: var(--textHeader)
+    color: var(--textHeader);
+    font-size: 18pt;
+}
+
+li {
+    padding-block: 10px;
+}
+
+ol{
+    padding-left: 60px;
+}
+
+td, th {
+    outline-color: var(--linkUnvisited);
+    outline-style: solid;
+    outline-width: 2px;
 }
 
 a:link{
@@ -68,21 +86,6 @@ a:visited{
     object-fit:cover;
     border-radius: 5px;
     outline-style: solid;
-    outline-offset: 2px;
     outline-color: var(--linkUnvisited);
-
-}
-
-li {
-    padding-block: 10px;
-}
-
-ol{
-    padding-left: 60px;
-}
-
-td, th {
-    outline-color: var(--linkUnvisited);
-    outline-style: solid;
-    outline-width: 1px;
+    outline-width: 2px;
 }
